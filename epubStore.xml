@@ -1,0 +1,17 @@
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by SLAP -->
+<SESSION>
+  <database>
+    <server>tcp://127.0.0.1:3306</server>
+    <user>ereader</user>
+    <pass>testmybooks</pass>
+    <store>ereader</store>
+    <log>estore.log</log>
+  </database>
+  <caller src="10.40.76.68">0</caller>
+  <failover>
+    <user>svchcpprodcom</user>
+    <pass>hcp#prodcom01</pass>
+    <store>DDRDB2</store>
+  </failover>
+</SESSION>
+
