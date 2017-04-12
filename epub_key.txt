@@ -1,6 +1,0 @@
-	success = zip.UnlockComponent("HARPERZIP_MbqLJJeWkRyu");
-	if (success != true) 
-	{
-		m_thr_error = zip.lastErrorText();
-		return 1;
-	}
