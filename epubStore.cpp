@@ -17,7 +17,7 @@
 //for debugging system only//
 /////////////////////////////
 //#define _VERBOSE 1
-#ifndef WIN32
+#ifndef (WIN32) || defined (_WIN64)
 #define _USE_OPENSSL 1
 #endif
 #include <iostream>
@@ -72,7 +72,7 @@ using namespace boost::local_time;
 //////////////////////////////////
 std::string NewIdent(std::string pFile);
 void LogError(string lFile, string pMsg);
-#ifndef WIN32
+#ifndef (WIN32) || defined (_WIN64)
 std::string getMd5(std::string pFile);
 #endif
 int regexSearch(const string st);
